@@ -1,0 +1,748 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>
+      Dominykas Mostauskis (programmer)
+    </title>
+    <style>
+      :root {
+        --initial-font-size: 16px;
+        --font-size: var(--initial-font-size);
+        --line-height: 1.25;
+        --unit: calc(var(--font-size) * var(--line-height));
+      }
+      html {
+        /* Vertical rhythm baseline
+        background-image: url(http://basehold.it/i/20/0/0/0/0.15);
+        background-size: 1px 20px;
+        background-repeat: repeat;
+        */
+      }
+      body {
+        padding: calc(var(--unit) * 3) 2vw;
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+        background-color: transparent;
+      }
+      @media (min-width: 992px) {
+        body {
+          max-width: 960px !important;
+        }
+      }
+      h1,h2,h3,p,ul {
+        margin: var(--unit) 0;
+      }
+      h1,h2,h3 {
+        line-height: var(--line-height);
+        font-weight: 600;
+      }
+      h1,h2 {
+        line-height: calc(var(--unit) * 2);
+        margin: calc(var(--unit) * 2) 0;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.65rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      @media (min-width: 50rem) {
+        #experience h3 {
+          display: inline;
+        }
+      }
+      .time-and-tags {
+        display: inline;
+      }
+      .tag {
+        display: inline-block;
+        background-color: hsl(205.3, 46.3%, 92%, 0.5);
+        color: hsl(205.2, 46.7%, 42%);
+        line-height: calc(var(--unit) * 0.75);
+      }
+      ul > li {
+        page-break-inside: avoid;
+        margin: calc(var(--unit) * 2) 0;
+      }
+      #portrait {
+        padding-right: calc(var(--unit) * 1.5);
+      }
+      @media (max-width: 768px) {
+        #portrait {
+          padding-bottom: calc(var(--unit) * 2);
+        }
+      }
+      #portrait img {
+        height: calc(var(--unit) * 6);
+        width: calc(var(--unit) * 6);
+      }
+      #influences h3 {
+        display: inline
+      }
+      #scores th,
+      #scores td {
+        border-bottom-width: 0 !important;
+        padding: calc(var(--unit) * 0.5) 0 !important;
+        font-weight: normal;
+      }
+      #scores table .test-type {
+        font-style: italic;
+        opacity: 0.8;
+        font-size: 0.9em;
+      }
+      #scores p:last-of-type {
+        margin-bottom: 0;
+      }
+      section > :last-child,
+      ul > :last-child,
+      li > :last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div class="row">
+      <section id="introduction" class="col-12">
+        <div class="row">
+          <div id="portrait" class="col-12 col-md-auto">
+            <img src="./portrait.jpg">
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <span class="col-12">
+                    Lithuania, UTC+2
+                  </span>
+                  <span class="col-12">
+                    
+  <a href="mailto:dominykas.mostauskis@gmail.com">
+    dominykas.mostauskis@<wbr>gmail.com
+  </a>
+
+                  </span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <span class="col-12">
+                    <a href='https://news.ycombinator.com/user?id=dmos62'>
+                      https://news.ycombinator.com/user?id=dmos62
+                    </a>
+                  </span>
+                  <span class="col-12">
+                    <a href='https://stackoverflow.com/users/1714997'>
+                      https://stackoverflow.com/users/1714997
+                    </a>
+                  </span>
+                  <span class="col-12">
+                    <a href='https://stackoverflow.com/story/dmos'>
+                      https://stackoverflow.com/story/dmos
+                    </a>
+                  </span>
+                  <span class="col-12">
+                    <a href='https://github.com/dmos62'>
+                      https://github.com/dmos62
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>Dominykas Mostauskis (programmer)</h1>
+          <p>
+            I'm hung up on readability; I'm obsessed with semantics; I consider writing an important skill. Makes me good at refactoring and churning out code that's easy to review and hand over.
+          </p>
+          <p>
+            I value simple solutions, open communication, clear thinking, and a holistic approach to quality.
+          </p>
+          <p>
+            I'm a generalist; I enjoy switching stacks and paradigms. I'm flexible and adaptable, and I appreciate those qualities in others.
+          </p>
+          <p>
+            I'm a technologist: I see society as a function of the tools we use and look for ways to change those tools.
+          </p>
+        <span>
+        I like to work with:
+        </span>
+        <nobr>
+          <span class="tag">
+            scala
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            clojure
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            lisp
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            rust
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            go
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            julia
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            functional-programming
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            reactive-programming
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            tla+
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            formal-specification
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            model-checking
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            clojurescript
+          </span>,
+        </nobr>
+        <nobr>
+          <span class="tag">
+            scala.js
+          </span>.
+        </nobr>
+      </section>
+      <section id="experience" class="col-12">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+              <h3>Developer and reviewer at Bisq</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  Oct 2019 to Aug 2020
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      java
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      javafx
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      distributed
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      trustless-exchange
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      cryptocurrency
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      blockchain
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      bitcoinj
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      reviewing
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      refactoring
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      grpc
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Maintenance and stability-first development of a decentralized, trustless cryptocurrency exchange. My responsibilities included participating in the design and implementation of the gRPC API and a CLI client, revamping in-app charting suite for increased clarity and usefulness, attempting a major refactor to decouple our business logic from the Bitcoin networking library we were using, and reviewing others' contributions.
+              </p>
+            </li>
+            <li>
+              <h3>Researching custom software to assist in trading</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2019
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      julia
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      rust
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      trading
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Own research. Was experimenting with ways to train a technical trader. Technical trading being an experience-critical occupation, I looked for ways to provide simulated trading environments, for faster development of strategies, skill and confidence. I also looked at ways to automate some more mechanical aspects of technical analysis. Ended up doing various GUI experiments in Julia and Rust.
+              </p>
+            </li>
+            <li>
+              <h3>Messaging infrastructure on an algorithmic trading system</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2018
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      zeromq
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      python
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      go
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      rust
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      memory-management
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Freelance project. The algorithmic trading system required message passing with high-throughput, and minimal, highly-constant latency. I experimented with custom benchmarks in Python, Go and Rust, finally landing on Python. The key to predictable latency in a garbage-collected environment was meticulous memory usage.
+              </p>
+            </li>
+            <li>
+              <h3>Implementation of Batch Neural Gas</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2017
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      machine-learning
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      numpy
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      scipy
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      python
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      unsupervised-learning
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Own project. Implementation of batch neural gas with magnification control in Python. This algorithm is the fastest neural gas algorithm, that I am aware of, by a wide margin, and currently there aren't any open source implementations of it. I hope to clean it up and open source it, someday.
+              </p>
+            </li>
+            <li>
+              <h3>Researching unsupervised clustering of text data</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2017
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      unsupervised-learning
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      neural-gas
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      self-organizing-maps
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      python
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      numpy
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      scipy
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      pandas
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      julia
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Own research. I was interested in clustering textual data, based on writting style, in an objective and highly human-interpretable way. I expected that to be useful in sifting through large volumes of news articles. I experimented with neural gas (descendent of self-organizing maps) for dimensionality reduction, and settled on using the merge family of SOM and NG algorithms (Hammer et al.) due to its ability to deal with variable length data (text, in this case). I developed a scheme to model words, sentences, paragraphs and texts in a hierarchical way.
+              </p>
+            </li>
+            <li>
+              <h3>Front-end developer at International Kiteboarding Organization</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  Mar 2016 to Jan 2017
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      typescript
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      angular
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      cordova
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      electron
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      epub.js
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Sole or senior front-end developer of IKO's portable training platform. Built a multi-platform app, which included a custom ebook reader based on epub.js. Portability was provided by Electron and Cordova, and the code was in Typescript and used Angular.
+              </p>
+            </li>
+            <li>
+              <h3>Control of a Parrot AR Drone via a Myo armband</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2016
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      reactive-streams
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      reactive-programming
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      scala
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      ar.drone
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      akka-stream
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Freelance project. Allows using palm gestures and arm rotations to pilot the Parrot drone. Implemented in Scala following the Reactive Stream Processing paradigm. It's interesting, because it's a real-time application on a garbage-collected platform (JVM).
+              </p>
+            </li>
+            <li>
+              <h3>Web apps on various stacks</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2012 to 2015
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      jvm
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      scala
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      clojure
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      java
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      clojurescript
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      javascript
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      react
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      frp
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      google-app-engine
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      playframework
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Self-employed, building Web apps. I started on Drupal, moved on to Scala Play Framework, and then to Google App Engine and its JVM runtime. I was taken by Scala and Clojure's expressiveness, Clojurescript's productivity relative to Javascript, and GAE's reimagining of the Web server. I gained extensive experience in these stacks. I learned that I not only care what I get done, but also how.
+              </p>
+            </li>
+            <li>
+              <h3>First programming project: a point & figure charting suite</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  2011
+                </span>
+                  <nobr>
+                    <span class="tag">
+                      java
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      javascript
+                    </span>,
+                  </nobr>
+                  <nobr>
+                    <span class="tag">
+                      google-closure
+                    </span>
+                  </nobr>
+              </div>
+              <p>
+                Was picking up trading and was interested in an obscure price charting method (point and figure charts). Software for doing the charts automatically wasn't available, so decided to write my own.
+              </p>
+            </li>
+        </ul>
+      </section>
+      <section id="scores" class="col-12">
+        <h2>Scores</h2>
+          <p>
+            Below are scores for some popular skill tests from Pluralsight (an assessment provider partnered with Stack Overflow) and my Stack Overflow community reputation score. Authenticity can be checked on my Stack Overflow developer story and profile.
+          </p>
+          <p>
+            I'm including these to highlight that I'm not new to the occupation. I'm aware that in doing so I risk to appear superficial; I assure you I don't presume that these scores are a wholesome testimony for a programmer's value.
+          </p>
+        <table class="table table-sm table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Score</th>
+              <th>Percentile</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                  Linux Fundamentals
+                  <span class="test-type">
+                    <wbr>
+                    Pluralsight test
+                  </span>
+                </td>
+                <td>
+                  248
+                </td>
+                <td>
+                  top 
+                  5%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Java Language Fundamentals
+                  <span class="test-type">
+                    <wbr>
+                    Pluralsight test
+                  </span>
+                </td>
+                <td>
+                  249
+                </td>
+                <td>
+                  top 
+                  4%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  JavaScript Core Language
+                  <span class="test-type">
+                    <wbr>
+                    Pluralsight test
+                  </span>
+                </td>
+                <td>
+                  223
+                </td>
+                <td>
+                  top 
+                  11%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Stack Overflow
+                  <span class="test-type">
+                    <wbr>
+                    reputation
+                  </span>
+                </td>
+                <td>
+                  6571
+                </td>
+                <td>
+                  top 
+                  6%
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="influences" class="col-12">
+        <h2>Works that influenced me</h2>
+        <ul>
+            <li>
+              <h3>Paradigms of AI Programming</h3>
+              <span class="time-period">
+                Peter Norvig
+              </span>
+              <p>
+                Book on programming that's influenced me the most. Taught me to love Lisps, and more importantly showed me how elegant programming can be. My programming can be split into periods pre and post reading this book.
+              </p>
+            </li>
+            <li>
+              <h3>Specifying Systems</h3>
+              <span class="time-period">
+                Leslie Lamport
+              </span>
+              <p>
+                Leslie Lamport and TLA+ taught me not only the value of formal specifications (and model-checking), but also the inefficiency of coding without a strong design. It's changed the way I approach planning and implementation.
+              </p>
+            </li>
+            <li>
+              <h3>Programming with Hand Tools</h3>
+              <span class="time-period">
+                Tim Ewald
+              </span>
+              <p>
+                Tim Ewald's talk that almost singlehandedly converted me to functional programming, Clojure, and woodworking. Seeing all possible actions as permutations on a few fundamental ones impressed upon me the power of simplicity.
+              </p>
+            </li>
+            <li>
+              <h3>The Future of Programming</h3>
+              <span class="time-period">
+                Bret Victor
+              </span>
+              <p>
+                Bret Victor's vision of general and personal computing is a huge inspiration. I've learned to deeply value willingness to step back and reevaluate technological heritage. Finding the story behind the everyday things we don't think to question frees me to make better decisions.
+              </p>
+            </li>
+        </ul>
+      </section>
+  </body>
+</html>
