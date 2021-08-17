@@ -1,0 +1,281 @@
+## vim: ft=html linebreak foldmethod=manual
+<%page args="data"/>
+<%
+  def insert_word_break_hint_after_at(email_string):
+    new_email_string = email_string.replace("@", "@<wbr>");
+    return new_email_string;
+
+  def bottom_percentile_to_top(bottom_percentile):
+    return 100 - int(bottom_percentile);
+%>
+<%def name="mailto_link(email, text)">
+  <a href="mailto:${email}">
+    ${text}
+  </a>
+</%def>
+<%def name="tel_link(phone_number, text)">
+  <a href="tel:${phone_number}">
+    ${text}
+  </a>
+</%def>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>
+      ${data["name"]} (${data["self-title"]})
+    </title>
+    <style>
+      :root {
+        --initial-font-size: 16px;
+        --font-size: var(--initial-font-size);
+        --line-height: 1.25;
+        --unit: calc(var(--font-size) * var(--line-height));
+      }
+      html {
+        /* Vertical rhythm baseline
+        background-image: url(http://basehold.it/i/20/0/0/0/0.15);
+        background-size: 1px 20px;
+        background-repeat: repeat;
+        */
+      }
+      body {
+        padding: calc(var(--unit) * 3) 2vw;
+        font-size: var(--font-size);
+        line-height: var(--line-height);
+        background-color: transparent;
+      }
+      @media (min-width: 992px) {
+        body {
+          max-width: 960px !important;
+        }
+      }
+      h1,h2,h3,p,ul {
+        margin: var(--unit) 0;
+      }
+      h1,h2,h3 {
+        line-height: var(--line-height);
+        font-weight: 600;
+      }
+      h1,h2 {
+        line-height: calc(var(--unit) * 2);
+        margin: calc(var(--unit) * 2) 0;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.65rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      @media (min-width: 50rem) {
+        #experience h3 {
+          display: inline;
+        }
+      }
+      .time-and-tags {
+        display: inline;
+      }
+      .tag {
+        display: inline-block;
+        background-color: hsl(205.3, 46.3%, 92%, 0.5);
+        color: hsl(205.2, 46.7%, 42%);
+        line-height: calc(var(--unit) * 0.75);
+      }
+      ul > li {
+        page-break-inside: avoid;
+        margin: calc(var(--unit) * 2) 0;
+      }
+      #portrait {
+        padding-right: calc(var(--unit) * 1.5);
+      }
+      @media (max-width: 768px) {
+        #portrait {
+          padding-bottom: calc(var(--unit) * 2);
+        }
+      }
+      #portrait img {
+        height: calc(var(--unit) * 6);
+        width: calc(var(--unit) * 6);
+      }
+      #influences h3 {
+        display: inline
+      }
+      #scores th,
+      #scores td {
+        border-bottom-width: 0 !important;
+        padding: calc(var(--unit) * 0.5) 0 !important;
+        font-weight: normal;
+      }
+      #scores table .test-type {
+        font-style: italic;
+        opacity: 0.8;
+        font-size: 0.9em;
+      }
+      #scores p:last-of-type {
+        margin-bottom: 0;
+      }
+      section > :last-child,
+      ul > :last-child,
+      li > :last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div class="row">
+      <section id="introduction" class="col-12">
+        <div class="row">
+          <div id="portrait" class="col-12 col-md-auto">
+            <img src="./portrait.jpg">
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <span class="col-12">
+                    ${data["location"]}
+                  </span>
+                  <span class="col-12">
+                    ${mailto_link(
+                      data["email"],
+                      insert_word_break_hint_after_at(data["email"])
+                    )}
+                  </span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <span class="col-12">
+                    <a href='${data["news ycombinator profile link"]}'>
+                      ${data["news ycombinator profile link"]}
+                    </a>
+                  </span>
+                  <span class="col-12">
+                    <a href='${data["stack overflow profile link"]}'>
+                      ${data["stack overflow profile link"]}
+                    </a>
+                  </span>
+                  <span class="col-12">
+                    <a href='${data["stack overflow story link"]}'>
+                      ${data["stack overflow story link"]}
+                    </a>
+                  </span>
+                  <span class="col-12">
+                    <a href='${data["github profile link"]}'>
+                      ${data["github profile link"]}
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>${data["name"]} (${data["self-title"]})</h1>
+        % for paragraph in data["introduction"]:
+          <p>
+            ${paragraph}
+          </p>
+        % endfor
+        <span>
+        I like to work with:
+        </span>
+        % for tag in data["technologies i want to work with"]:
+        <nobr>
+          <span class="tag">
+            ${tag}
+          </span>${',' if not loop.last else '.'}
+        </nobr>
+        % endfor
+      </section>
+      <section id="experience" class="col-12">
+        <h2>Experience</h2>
+        <ul>
+          % for experience in data["experiences"]:
+            <li>
+              <h3>${experience["title"]}</h3>
+              <div class="time-and-tags">
+                <span class="time-period">
+                  ${experience["time period"]}
+                </span>
+                % for tag in experience["tags"]:
+                  <nobr>
+                    <span class="tag">
+                      ${tag}
+                    </span>${',' if not loop.last else ''}
+                  </nobr>
+                % endfor
+              </div>
+              <p>
+                ${experience["description"]}
+              </p>
+            </li>
+          % endfor
+        </ul>
+      </section>
+      <section id="scores" class="col-12">
+        <h2>Scores</h2>
+        % for paragraph in data["scores comment"]:
+          <p>
+            ${paragraph}
+          </p>
+        % endfor
+        <table class="table table-sm table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Score</th>
+              <th>Percentile</th>
+            </tr>
+          </thead>
+          <tbody>
+            % for score in data["scores"]:
+              <tr>
+                <td>
+                  ${score["title"]}
+                  <span class="test-type">
+                  % if "type" in score:
+                    <wbr>
+                    ${score["type"]}
+                  % endif
+                  </span>
+                </td>
+                <td>
+                  ${score["score"]}
+                </td>
+                <td>
+                  top 
+                  ${bottom_percentile_to_top(
+                    score["percentile"]
+                    )}%
+                </td>
+              </tr>
+            % endfor
+          </tbody>
+        </table>
+      </section>
+      <section id="influences" class="col-12">
+        <h2>Works that influenced me</h2>
+        <ul>
+          % for work in data["influential books or lectures"]:
+            <li>
+              <h3>${work["title"]}</h3>
+              <span class="time-period">
+                ${work["author"]}
+              </span>
+              <p>
+                ${work["comment"]}
+              </p>
+            </li>
+          % endfor
+        </ul>
+      </section>
+  </body>
+</html>

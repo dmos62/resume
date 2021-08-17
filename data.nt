@@ -1,0 +1,137 @@
+# vim: linebreak foldmethod=manual
+
+name: Dominykas Mostauskis
+self-title: programmer
+
+location: Lithuania, UTC+2
+
+email: dominykas.mostauskis@gmail.com
+
+github profile link: https://github.com/dmos62
+stack overflow profile link: https://stackoverflow.com/users/1714997
+stack overflow story link: https://stackoverflow.com/story/dmos
+news ycombinator profile link: https://news.ycombinator.com/user?id=dmos62
+
+introduction:
+  - I'm hung up on readability; I'm obsessed with semantics; I consider writing an important skill. Makes me good at refactoring and churning out code that's easy to review and hand over.
+  - I value simple solutions, open communication, clear thinking, and a holistic approach to quality.
+  - I'm a generalist; I enjoy switching stacks and paradigms. I'm flexible and adaptable, and I appreciate those qualities in others.
+  - I'm a technologist: I see society as a function of the tools we use and look for ways to change those tools.
+
+technologies i want to work with:
+  - scala
+  - clojure
+  - lisp
+  - rust
+  - go
+  - julia
+  - functional-programming
+  - reactive-programming
+  - tla+
+  - formal-specification
+  - model-checking
+  - clojurescript
+  - scala.js
+
+experiences:
+  -
+   title: Developer and reviewer at Bisq
+   tags:
+    [java, javafx, distributed, trustless-exchange, cryptocurrency, blockchain, bitcoinj, reviewing, refactoring, grpc]
+   description: Maintenance and stability-first development of a decentralized, trustless cryptocurrency exchange. My responsibilities included participating in the design and implementation of the gRPC API and a CLI client, revamping in-app charting suite for increased clarity and usefulness, attempting a major refactor to decouple our business logic from the Bitcoin networking library we were using, and reviewing others' contributions.
+   time period: Oct 2019 to Aug 2020
+  -
+   title: Researching custom software to assist in trading
+   tags:
+     [julia, rust, trading]
+   description: Own research. Was experimenting with ways to train a technical trader. Technical trading being an experience-critical occupation, I looked for ways to provide simulated trading environments, for faster development of strategies, skill and confidence. I also looked at ways to automate some more mechanical aspects of technical analysis. Did various GUI experiments in Julia and Rust.
+   time period: 2019
+  -
+   title: Messaging infrastructure on an algorithmic trading system
+   tags:
+     [zeromq, python, go, rust, memory-management]
+   description: Freelance project. The algorithmic trading system required message passing with high-throughput and minimal, highly-constant latency. I experimented with custom benchmarks in Python, Go and Rust, finally landing on Python. The key to predictable latency in a garbage-collected environment was meticulous memory usage.
+   time period: 2018
+  -
+   title: Implementation of Batch Neural Gas
+   tags:
+     [machine-learning, numpy, scipy, python, unsupervised-learning]
+   description: Own project. Implementation of batch neural gas with magnification control in Python. This algorithm is the fastest neural gas algorithm, that I am aware of, by a wide margin, and currently there aren't any open-source implementations of it. I hope to clean it up and open-source it, someday.
+   time period: 2017
+  -
+   title: Researching unsupervised clustering of text data
+   tags:
+     [unsupervised-learning, neural-gas, self-organizing-maps, python, numpy, scipy, pandas, julia]
+   description: Own research. I was interested in clustering textual data, based on writing style, in an objective and highly human-interpretable way. I expected that to be useful in sifting through large volumes of news articles. I experimented with neural gas (descendent of self-organizing maps) for dimensionality reduction, and settled on using the merge family of SOM and NG algorithms (Hammer et al.) due to its ability to deal with variable length data (text, in this case). I developed a scheme to model words, sentences, paragraphs and texts in a hierarchical way.
+   time period: 2017
+  -
+   title: Front-end developer at International Kiteboarding Organization
+   tags:
+     [typescript, angular, cordova, electron, epub.js]
+   description: Sole or senior front-end developer of IKO's portable training platform. Built a multi-platform app, which included a custom ebook reader based on epub.js. Portability was provided by Electron and Cordova, and the code was in Typescript and used Angular.
+   time period: Mar 2016 to Jan 2017
+  -
+   title: Control of a Parrot AR Drone via a Myo armband
+   tags:
+     [reactive-streams, reactive-programming, scala, ar.drone, akka-stream]
+   description: Freelance project. Allows using palm gestures and arm rotations to pilot the Parrot drone. Implemented in Scala following the Reactive Stream Processing paradigm. It's interesting, because it's a real-time application on a garbage-collected platform (JVM).
+   time period: 2016
+  -
+   title: Web apps on various stacks
+   tags:
+     [jvm, scala, clojure, java, clojurescript, javascript, react, frp, google-app-engine, playframework]
+   description: Self-employed, building Web apps. I started on Drupal, moved on to Scala Play Framework, and then to Google App Engine and its JVM runtime. I was taken by Scala and Clojure's expressiveness, Clojurescript's productivity relative to Javascript, and GAE's reimagining of the Web server. I gained extensive experience in these stacks. I learned that I not only care what I get done, but also how.
+   time period: 2012 to 2015
+  -
+   title: First programming project: a point & figure charting suite
+   tags:
+     [java, javascript, google-closure]
+   description: Was picking up trading and was interested in an obscure price charting method (point and figure charts). Software for doing the charts automatically wasn't available, so decided to write my own.
+   time period: 2011
+
+influential books or lectures:
+  -
+    title: Paradigms of AI Programming
+    author: Peter Norvig
+    link: https://en.wikipedia.org/wiki/Paradigms_of_AI_Programming
+    comment: Book on programming that's influenced me the most. Taught me to love Lisps, and more importantly showed me how elegant programming can be. My programming can be split into periods pre and post reading this book.
+  -
+    title: Specifying Systems
+    author: Leslie Lamport
+    link: https://www.amazon.com/Specifying-Systems-Language-Hardware-Engineers/dp/032114306X
+    comment: Leslie Lamport and TLA+ taught me not only the value of formal specifications (and model-checking), but also the inefficiency of coding without a strong design. It's changed the way I approach planning and implementation.
+  -
+    title: Programming with Hand Tools
+    author: Tim Ewald
+    link: https://www.youtube.com/watch?v=ShEez0JkOFw
+    comment: Tim Ewald's talk that almost singlehandedly converted me to functional programming, Clojure, and woodworking. Seeing all possible actions as permutations on a few fundamental ones impressed upon me the power of simplicity.
+  -
+    title: The Future of Programming
+    author: Bret Victor
+    link: https://vimeo.com/71278954
+    comment: Bret Victor's vision of general and personal computing is a huge inspiration. I've learned to deeply value willingness to step back and reevaluate technological heritage. Finding the story behind the everyday things we don't think to question frees me to make better decisions.
+
+scores comment:
+  - Below are scores for some popular skill tests from Pluralsight (an assessment provider partnered with Stack Overflow) and my Stack Overflow community reputation score. Authenticity can be checked on my Stack Overflow developer story and profile.
+  - I'm including these to highlight that I'm not new to the occupation. I'm aware that in doing so I risk to appear superficial; I assure you I don't presume that these scores are a wholesome testimony for a programmer's value.
+scores:
+  - 
+    title: Linux Fundamentals
+    type: Pluralsight test
+    score: 248
+    percentile: 95
+  - 
+    title: Java Language Fundamentals
+    type: Pluralsight test
+    score: 249
+    percentile: 96
+  - 
+    title: JavaScript Core Language
+    type: Pluralsight test
+    score: 223
+    percentile: 89
+  - 
+    title: Stack Overflow
+    type: reputation
+    score: 6571
+    percentile: 94
