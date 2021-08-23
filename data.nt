@@ -35,6 +35,12 @@ technologies i want to work with:
 
 experiences:
   -
+   title: Volunteering + hobby data science project
+   tags: 
+    [vue, typescript, nuxt, julia, graph-analysis, dimensionality-reduction]
+   description: Volunteering for an animal rights non-profit (at Tušti narvai) in a technical capacity, namely developing a framework for single-page donation or petition campaigns. In parallel, developing an alternative way to browse Hacker News (and tree-like forums in general) based on clustering in the user-interaction graph.
+   time period: Currently (as of Aug 2021)
+  -
    title: Developer and reviewer at Bisq
    tags:
     [java, javafx, distributed, trustless-exchange, cryptocurrency, blockchain, bitcoinj, reviewing, refactoring, grpc]
