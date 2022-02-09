@@ -35,11 +35,17 @@ technologies i want to work with:
 
 experiences:
   -
+   title: Backend developer at Mathesar
+   tags:
+    [python, postgresql, svelte]
+   description: Helping engineer a data toolkit that seeks to leverage PostgreSQL's usefulness to empower both technical and non-technical users when working with data. Includes reframing SQL concepts in a way that flattens the learning curve and allows pleasurable user interfaces to be built.
+   time period: Currently (as of Nov 2021)
+  -
    title: Volunteering + hobby data science project
    tags:
     [vue, typescript, nuxt, julia, graph-analysis, dimensionality-reduction]
    description: Volunteering for an animal rights non-profit (Tušti narvai) in a technical capacity, namely developing a framework for single-page donation or petition campaigns. In parallel, developing an alternative way to browse Hacker News (and tree-like forums in general) based on clustering in the user-interaction graph.
-   time period: Currently (as of Aug 2021)
+   time period: Aug 2021 to Nov 2021
   -
    title: Developer and reviewer at Bisq
    tags:
