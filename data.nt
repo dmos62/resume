@@ -36,7 +36,7 @@ technologies i want to work with:
 experiences:
   -
    title: Volunteering + hobby data science project
-   tags: 
+   tags:
     [vue, typescript, nuxt, julia, graph-analysis, dimensionality-reduction]
    description: Volunteering for an animal rights non-profit (Tušti narvai) in a technical capacity, namely developing a framework for single-page donation or petition campaigns. In parallel, developing an alternative way to browse Hacker News (and tree-like forums in general) based on clustering in the user-interaction graph.
    time period: Currently (as of Aug 2021)
@@ -121,22 +121,22 @@ scores comment:
   - Below are scores for some popular skill tests from Pluralsight (an assessment provider partnered with Stack Overflow) and my Stack Overflow community reputation score. Authenticity can be checked on my Stack Overflow developer story and profile.
   - I'm including these to highlight that I'm not new to the occupation. I'm aware that in doing so I risk to appear superficial; I assure you I don't presume that these scores are a wholesome testimony for a programmer's value.
 scores:
-  - 
+  -
     title: Linux Fundamentals
     type: Pluralsight test
     score: 248
     percentile: 95
-  - 
+  -
     title: Java Language Fundamentals
     type: Pluralsight test
     score: 249
     percentile: 96
-  - 
+  -
     title: JavaScript Core Language
     type: Pluralsight test
     score: 223
     percentile: 89
-  - 
+  -
     title: Stack Overflow
     type: reputation
     score: 6571
